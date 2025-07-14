@@ -91,7 +91,7 @@ class ModelLoader {
         'church.glb',
         (gltf) => {
           this.models.church = gltf.scene;
-          this.models.church.scale.set(1.1, 1.1, 1.1);
+          this.models.church.scale.set(1.05, 1.05,1.05);
           const box = new THREE.Box3().setFromObject(this.models.church);
           const center = box.getCenter(new THREE.Vector3());
           this.models.church.position.set(0,0,-5
